@@ -10,6 +10,13 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #222;
   background: #f7f5f0;
+  /*background: #eaf0f5;
+  background: #cedeeb;
+  background: #a6c1d6;
+
+  background: #2f2f34;
+  background: black;*/
+  /*background: #e6e7f2;*/
 }
 /* Link Styles */
 
@@ -69,12 +76,12 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
-  border: 3px solid white;
-  transition: all .5s;
+  border-radius: 30%;
+  border: 4px solid #babec9;
+  transition: all .3s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: scale(1.2);
 }
 .tag {
   background-color: #efefef;
@@ -102,12 +109,22 @@ header .profile-image:hover {
   border-color: #ff99ff;
 }
 
+.logo-small {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-wide {
+  width: 97%;
+}
+
 ul.skills {
   padding: 0;
   text-align: center;
 }
 
-.skills li {
+.skills li,
+.hobbies {
   border-radius: 6px;
   display: inline-block;
   background: #ff9904;
@@ -116,8 +133,40 @@ ul.skills {
   margin: 2px;
 }
 
-.skills li:nth-child(odd) {
+.skills li:nth-child(odd),
+.hobbies {
   background: #0399ff;
+}
+
+.experience-list li {
+  display: block;
+  max-width: 40%;
+}
+
+.resources {
+  background: #0399ff;
+  color: white;
+  display: inline-block;
+  margin-bottom: 30px;
+  min-width: 50%;
+  text-align: center;
+}
+
+.resources:hover {
+  border-radius: 6px;
+  display: inline-block;
+  background: #ff9904;
+  color: white;
+  /*padding: 5px 10px;
+  margin: 2px;*/
+}
+
+.resources img {
+  /*padding-left: 10px;*/
+}
+
+.first-p {
+  margin-top: 30px;
 }
 
 footer {
